@@ -1,0 +1,40 @@
+package modul2202357201006;
+
+import javax.swing.JOptionPane;
+
+
+public class BantuBudi {
+    
+    public static double LuasPersegiPanjang(double panjang, double lebar) {
+        return panjang * lebar;
+    }
+    
+    public static double LuasSegitiga(double alas, double tinggi) {
+        return 0.5 * alas * tinggi;
+    }
+    
+    public static double LuasLingkaran(double JariJari) {
+        return Math.pow(JariJari, 2);
+    }
+    
+    public static void main(String[] args) {
+        
+        double panjangPersegiPanjang = Double.parseDouble(JOptionPane.showInputDialog("Masukkan Panjang Persegi Panjang: "));
+        double lebarPersegiPanjang = Double.parseDouble(JOptionPane.showInputDialog("Masukkan Lebar Persegi Panjang: "));
+        double luasPersegiPanjang = LuasPersegiPanjang(panjangPersegiPanjang, lebarPersegiPanjang);
+        JOptionPane.showInputDialog(null, "Luas Persegi Panjang: "+ luasPersegiPanjang);
+        System.out.println("Luas Persegi Panjang: " + luasPersegiPanjang);
+        
+        double alasSegitiga = Double.parseDouble(JOptionPane.showInputDialog("Masukkan Alas Segitiga: "));
+        double tinggiSegitiga = Double.parseDouble(JOptionPane.showInputDialog("Masukkan Tinggi Segitiga: "));
+        double luasSegitiga = LuasSegitiga(alasSegitiga, tinggiSegitiga);
+        JOptionPane.showInputDialog(null, "Luas Segitiga: "+ luasSegitiga);
+        System.out.println("Luas Persegi Panjang: " + luasSegitiga);
+        
+        double JariJariLingkaran = Double.parseDouble(JOptionPane.showInputDialog("Masukkan Jari-Jari Lingkaran : "));
+        double luasLingkaran = LuasLingkaran(JariJariLingkaran);
+        JOptionPane.showInputDialog(null, "Luas Lingkaran: "+ luasLingkaran);
+        System.out.println("Luas LIngkaran: " + luasLingkaran);
+        
+    }
+}
